@@ -1,32 +1,79 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
-
-
 # BMI Calculator 💪
 
-## Our Goal
+## Introduction
 
-The objective of this tutorial is to look at how we can customise Flutter Widgets to achieve our own beautiful user interface designs. If you have a designer on board, no matter how unconventional their designs are, we can create them using Flutter. 
+Welcome to the BMI Calculator! This application helps users calculate their Body Mass Index (BMI) in a fun and engaging way. The design is inspired by the beautiful work of Ruben Vaalt, providing a seamless and intuitive user experience. 
 
+## Features
 
-## What you will create
+- **Multi-Screen App**: The app features a multi-screen interface, allowing users to navigate easily through different pages.
+- **Custom Styling**: The app showcases beautiful and customized UI components.
+- **Interactive Elements**: Users can interact with various elements, including input sliders and buttons.
+- **Real-Time Calculation**: BMI is calculated in real-time as users adjust their inputs.
 
-We’re going to make a Body Mass Index Calculator inspired by the beautiful designs made by [Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator). It will be a multi screen app with simple functionality but full-on custom styling. 
+## Screens
 
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/bmi-calc-demo.gif)
 
-## What you will learn
+### Calculator Page
 
-- How to use Flutter themes to create coherent branding. 
-- How to create multi-page apps using Flutter Routes and Navigator.
-- How to extract and refactor Flutter Widgets with a click of the button. 
-- How to pass functions as parameters and fields.
-- How to use the GestureDetector Widget to detect more than just a tap.
-- How to use custom colour palettes by using hex codes.
-- How to customise Flutter Widgets to achieve a specific design style.
-- Understand Dart Enums and the Ternary Operator.
-- Learn about composition vs. inheritance and the Flutter way of creating custom UI.
-- Understand the difference between const and final in Dart and when to use each.
+- This page features input sliders for weight and height.
+- Users can select their gender.
+- A calculate button processes the inputs and displays the BMI result.
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+### Result Page
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+- Displays the calculated BMI.
+- Provides a textual interpretation of the BMI (e.g., Underweight, Normal, Overweight, Obese).
+
+## Technical Details
+
+### Theming
+
+- Utilizes Flutter themes to create a cohesive and branded user experience.
+- Custom color palettes using hex codes.
+
+### Navigation
+
+- Implements multi-page navigation using Flutter Routes and Navigator.
+
+### Widgets
+
+- Extensive use of custom Flutter Widgets.
+- GestureDetector Widget for detecting user interactions beyond basic taps.
+
+### Code Architecture
+
+- Refactored and modularized code for better maintainability.
+- Composition over inheritance approach for building custom UI components.
+
+### Performance
+
+- Efficient state management ensuring smooth and responsive UI.
+
+## Future Plans
+
+- **Detailed Analysis**: Adding a feature for detailed analysis of BMI results over time.
+- **User Authentication**: Implementing user authentication to save and retrieve user data.
+- **Enhanced UI**: Further refinement of UI components for an even better user experience.
+
+## Setting up the project in your local environment💻
+
+1. Clone this repository.
+2. After Cloning, open the project in android studio
+3. Create a new project on [Firebase Console](https://console.firebase.google.com/)
+4. Activate Email SignIn in Firebase auth, and activate Firebase Firestore and Firebase Storage in **test mode**.
+5. Integrate firebase using the tutorial mentioned above to use your own database (Necessary step else the app wont work)
+6. Run `flutter pub get` to get the dependencies.
+7. Finally, run the app:
+
+```
+flutter run
+```
+7. To build the apk of the app, you can use the following command
+```
+flutter build apk --release
+```
+You can find the apk in build/app/outputs/flutter-apk folder
+You can refer the following video for more [details](https://youtu.be/TOgfbyw6-Mw)
+
